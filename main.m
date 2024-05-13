@@ -34,7 +34,7 @@ end
 
 % perform FBP reconstruction on the phantom image
 sinogram_phantom = radon(phantom(256), 0:340);
-back_projected_phantom = iradon(sinogram_phantom, 0:340, 'linear', 'Ram-Lak');
+back_projected_phantom = iradon(sinogram_phantom, 0:340, 'linear', 'None');
 
 % resize the FBP-reconstructed phantom image to match the size of back_projected_image
 back_projected_phantom_resized = imresize(back_projected_phantom, [num_projections, num_detectors]);
