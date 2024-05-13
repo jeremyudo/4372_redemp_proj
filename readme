@@ -1,0 +1,69 @@
+Certainly! Here's a more in-depth README file:
+
+---
+
+# CT Image Reconstruction Project
+
+## Overview
+
+This project focuses on understanding and implementing basic techniques for reconstructing CT images. It is designed for students with beginner to intermediate knowledge in medical imaging and programming. The project provides step-by-step guidance on implementing two common reconstruction methods: Nonuniform Fast Fourier Transform (NUFFT) and Filtered Back Projection (FBP). By following the provided instructions and examples, students will gain practical experience in CT image reconstruction and improve their understanding of the underlying concepts.
+
+Objectives
+Learn Fundamental Concepts: Gain a basic understanding of CT imaging principles, including the Radon transform and image reconstruction techniques.
+Implement Reconstruction Algorithms: Learn how to implement NUFFT and FBP algorithms using MATLAB.
+Compare Reconstruction Methods: Compare the performance of NUFFT and FBP algorithms in terms of image quality and computational efficiency.
+Validate Results: Verify the accuracy of the implemented algorithms using synthetic data and simple phantom images.
+
+Key Features
+Simplified Instructions: Clear, step-by-step instructions are provided to guide students through the implementation process.
+Example Code: Code examples are included to help students understand the implementation details and apply the techniques to real-world data.
+Interactive Exercises: Interactive exercises allow students to experiment with reconstruction parameters and visualize the effects in real time.
+Basic Documentation: Basic documentation is provided to explain key concepts and guide students through the implementation process.
+
+
+## Introduction
+
+CT imaging is a vital medical imaging modality used for non-invasive visualization of internal anatomical structures. It involves acquiring a series of projection images from different angles around the patient, which are then processed to reconstruct cross-sectional images.
+
+This project focuses on two key techniques for CT image reconstruction:
+
+1. **NUFFT**: NUFFT is a method for reconstructing images from nonuniformly sampled data in Fourier space. It is particularly useful when the data is not acquired on a regular grid, as is often the case in CT imaging.
+
+2. **FBP**: FBP is a classic technique used for reconstructing images from projection data acquired in a CT scan. It involves back-projecting the acquired data onto a grid and applying a filtering step to mitigate artifacts.
+
+## Installation
+
+To run the code, you need MATLAB installed on your system. Follow these steps to get started:
+
+1. Clone or download the repository to your local machine.
+2. Place the `Rot_Grad.csv` file in the project directory.
+
+## Usage
+
+1. Open MATLAB and navigate to the project directory.
+2. Run the `main.m` script.
+3. The script will load the CSV file, perform NUFFT reconstruction, generate a sinogram, perform back projection, and display the results.
+
+## File Structure
+
+The project directory contains the following files:
+
+- `main.m`: Main script for CT image reconstruction.
+- `Rot_Grad.csv`: CSV file containing raw k-space data.
+- `README.md`: Project documentation.
+
+## Documentation
+
+### Methods Overview
+
+- **NUFFT Reconstruction**: The NUFFT method is applied to reconstruct CT images from nonuniformly sampled k-space data. It involves interpolating the acquired data to a regular grid in Fourier space.
+
+- **FBP Reconstruction**: FBP is employed to reconstruct CT images from projection data acquired at various angles. It includes back-projecting the acquired data onto a grid and applying a filter to mitigate artifacts.
+
+### Validation
+
+A phantom image of size 256x256 is used for validation purposes. This synthetic image mimics the characteristics of real CT images and serves as a benchmark for evaluating the reconstruction algorithms.
+
+## Authors
+
+- Jeremy Udo
